@@ -20,6 +20,7 @@ let getApi = async (req, res) => {
 
 ///////////////////////////////////////////////////////////////////////////////////////
 
+//Signup Api Creation//
 let signupApi = async (req, res) => {
   const { user_name, email_id, image, password, id } = req.body;
   const salt = await bcrypt.genSalt(8);

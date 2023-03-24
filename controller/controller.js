@@ -3,6 +3,8 @@ const bcrypt = require("bcrypt");
 const jwt = require("jsonwebtoken");
 const uuid = require("uuid").v4;
 
+
+//Get Api Creation//
 let getApi = async (req, res) => {
   try {
     await con.query("SELECT * FROM users", (err, result, fields) => {
